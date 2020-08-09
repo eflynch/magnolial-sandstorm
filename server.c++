@@ -308,6 +308,8 @@ private:
       return "image/svg+xml; charset=UTF-8";
     } else if (filename.endsWith(".txt")) {
       return "text/plain; charset=UTF-8";
+    } else if (filename.endsWith(".mgl")) {
+      return "application/json";
     } else {
       return "application/octet-stream";
     }
